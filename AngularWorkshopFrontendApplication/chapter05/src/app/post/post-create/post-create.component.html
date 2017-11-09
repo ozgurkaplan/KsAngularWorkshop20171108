@@ -1,0 +1,15 @@
+<div>
+    <div class="form-group">
+        <label for="title">Title </label>
+        <input type="text" [(ngModel)]="post.title" class="form-control" id="title" placeholder="Title">
+    </div>
+    <div class="form-group">
+        <label for="summary">Summary</label>
+        <textarea class="form-control" [(ngModel)]="post.summary" id="summary" placeholder="Summary"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">Text</label>
+        <p-editor [(ngModel)]="post.text" [style]="{'height':'320px'}"></p-editor>
+    </div>
+    <button type="text" (click)="save()" class="btn btn-default">Save</button>
+</div>

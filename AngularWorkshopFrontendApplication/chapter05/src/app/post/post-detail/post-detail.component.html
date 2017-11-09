@@ -1,0 +1,10 @@
+<div *ngIf="!post">
+    Yükleniyor...
+</div>
+<div *ngIf="post">
+    <h1>{{post.title}}</h1>
+    <div [innerHtml]="post.text"></div>
+    <p>{{post.date/1000|date}} tarihinde yayınlandı.</p>
+    <p>{{post.viewCount}} kez okundu.</p>
+    <app-star [rating]="post.score" [isRateable]="true" (ratingClicked)="postRated($event)"></app-star>
+</div>

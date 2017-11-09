@@ -1,0 +1,11 @@
+.star-container {
+    overflow: hidden;
+}
+
+.star {
+    width: 86px;
+}
+
+div {
+    cursor: pointer;
+}

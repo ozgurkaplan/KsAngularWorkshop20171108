@@ -1,0 +1,9 @@
+<div class="panel panel-default" *ngFor="let post of postList">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{post.title}}</h3>
+    </div>
+    <div class="panel-body">
+        <p><a [routerLink]="'../post-detail/' + post.id">{{post.summary}}</a></p>
+        <p>{{post.date*1000 | date}} tarihinde yayınlandı.</p>
+    </div>
+</div>
